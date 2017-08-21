@@ -3,7 +3,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', {
+    title: 'Express'
+  });
 });
 
-module.exports = router;
+
+/* GET home page. */
+router.get('/test', function(req, res, next) {
+      res.send("THIS IS FOR PRACTICE");
+
+      module.exports = router;
